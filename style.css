@@ -1,0 +1,1729 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+}
+
+body {
+    background-color: #E9D8C6;
+    overflow-x: hidden;
+
+}
+
+/*--WIDESCREEN--*/
+@media (min-width: 1441px) {
+    .secoes {
+        width: 100%;
+        height: 770px;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .secao {
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/secao-1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .content {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .logo {
+        width: 230px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 40px;
+        font-family: Playfair Display;
+        font-weight: 500;
+        line-height: 50px;
+        width: 39%;
+        color: #1E1E1E;
+        margin-bottom: 10px;
+
+    }
+
+    .title span {
+        color: #A48A72;
+        font-style: italic;
+    }
+
+
+    .description {
+        font-size: 18px;
+        font-family: Montserrat;
+        width: 35%;
+        color: #1E1E1E;
+        margin-bottom: 20px;
+    }
+
+    .lista {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        width: 39%;
+
+    }
+
+    .lista-item {
+        background-image: linear-gradient(160deg, #FBEDDE, #fbedde00);
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 15px;
+        color: #5B5B5B;
+        font-family: Montserrat;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 200px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .lista-item p {
+        width: 94%;
+    }
+
+
+    .perfil {
+        width: 350px;
+        height: 67px;
+        background-color: #FBEDDE;
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        gap: 10px;
+        padding: 0px 8px;
+        margin-bottom: 20px;
+
+    }
+
+    .info-perfil {
+        font-size: 15px;
+        font-family: Montserrat;
+        color: #4E4E4E;
+
+    }
+
+    .info-perfil span {
+        color: #4E4E4E;
+        font-weight: 700;
+    }
+
+    .perfil img {
+        border: solid 5px;
+        border-radius: 50px;
+        border-color: #D2B9A2;
+    }
+
+    .content a {
+        width: 350px;
+        height: 60px;
+        background-color: #A4896F;
+        font-size: 18px;
+        text-decoration: none;
+        color: #ffffff;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 90px;
+        font-family: Montserrat;
+    }
+
+    .navegacao {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border-top: 2px solid;
+        border-image-source: linear-gradient(to right, #7E6B5A, #7e6b5a00 55%);
+        border-image-slice: 1;
+
+    }
+
+    .arrows {
+        gap: 10px;
+        display: flex;
+        margin-top: -28px;
+        z-index: 100;
+    }
+
+    .seta {
+        width: 38px;
+        height: 38px;
+        border-radius: 40px;
+        border: none;
+        background-color: #7E6B5A;
+    }
+
+    .secao-2 {
+        height: 100%;
+        padding: 30px 0px;
+    }
+
+    .botao {
+        height: 268px;
+        width: 532px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .img-botao {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .list-botoes {
+        margin-left: -280px !important;
+        gap: 15px;
+        padding-right: 40px;
+    }
+
+    .botao-selecionado {
+        border-width: 2px;
+    }
+
+    .img-botao {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+
+    .primeiro {
+        background-image: url(/images/botao01.png);
+    }
+
+    .segundo {
+        background-image: url(/images/botao02.png);
+    }
+
+    .terceiro {
+        background-image: url(/images/botao03.png);
+    }
+
+    .quarto {
+        background-image: url(/images/botao04.png);
+    }
+
+    .info-botao {
+        position: absolute;
+        height: 268px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+        gap: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .info-botao p {
+        font-size: 35px;
+        font-family: Playfair Display;
+        font-weight: 400;
+        line-height: 40px;
+        width: 217px;
+        color: #ffffff;
+    }
+
+    .info-botao span {
+        font-size: 35px;
+        background-color: #AC947E;
+        padding: 5px;
+        color: #4B3F35;
+        width: fit-content;
+
+    }
+
+}
+
+
+/*--DESKTOP--*/
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .secoes {
+        width: 100%;
+        height: 650px;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .secao {
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/secao-1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .content {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .logo {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 40px;
+        font-family: Playfair Display;
+        font-weight: 500;
+        line-height: 50px;
+        width: 35%;
+        color: #1E1E1E;
+        margin-bottom: 10px;
+
+    }
+
+    .title span {
+        color: #A48A72;
+        font-style: italic;
+    }
+
+
+    .description {
+        font-size: 15px;
+        font-family: Montserrat;
+        width: 30%;
+        color: #1E1E1E;
+        margin-bottom: 25px;
+    }
+
+    .lista {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        width: 50%;
+
+    }
+
+    .lista-item {
+        background-image: linear-gradient(160deg, #FBEDDE, #fbedde00);
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 14px;
+        color: #5B5B5B;
+        font-family: Montserrat;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 200px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .lista-item p {
+        width: 94%;
+    }
+
+
+    .perfil {
+        width: 350px;
+        height: 67px;
+        background-color: #FBEDDE;
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        gap: 10px;
+        padding: 0px 8px;
+        margin-bottom: 20px;
+
+    }
+
+    .info-perfil {
+        font-size: 15px;
+        font-family: Montserrat;
+        color: #4E4E4E;
+
+    }
+
+    .info-perfil span {
+        color: #4E4E4E;
+        font-weight: 700;
+    }
+
+    .perfil img {
+        border: solid 5px;
+        border-radius: 50px;
+        border-color: #D2B9A2;
+    }
+
+    .content a {
+        width: 350px;
+        height: 60px;
+        background-color: #A4896F;
+        font-size: 18px;
+        text-decoration: none;
+        color: #ffffff;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 90px;
+        font-family: Montserrat;
+    }
+
+    .navegacao {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border-top: 2px solid;
+        border-image-source: linear-gradient(to right, #7E6B5A, #7e6b5a00 55%);
+        border-image-slice: 1;
+        margin-top: 30px;
+
+    }
+
+    .arrows {
+        gap: 10px;
+        display: flex;
+        margin-top: -28px;
+        z-index: 100;
+    }
+
+    .seta {
+        width: 38px;
+        height: 38px;
+        border-radius: 40px;
+        border: none;
+        background-color: #7E6B5A;
+    }
+
+    .secao-2 {
+        height: 100%;
+        overflow-x: hidden;
+        padding: 30px 0px;
+    }
+
+    .botao {
+        height: 268px;
+        width: 532px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .img-botao {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .list-botoes {
+        margin-left: -480px !important;
+        gap: 15px;
+        padding-right: 40px;
+    }
+
+    .botao-selecionado {
+        border-width: 2px;
+    }
+
+    .img-botao {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+
+    .primeiro {
+        background-image: url(/images/botao01.png);
+    }
+
+    .segundo {
+        background-image: url(/images/botao02.png);
+    }
+
+    .terceiro {
+        background-image: url(/images/botao03.png);
+    }
+
+    .quarto {
+        background-image: url(/images/botao04.png);
+    }
+
+    .info-botao {
+        position: absolute;
+        height: 268px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+        gap: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .info-botao p {
+        font-size: 35px;
+        font-family: Playfair Display;
+        font-weight: 400;
+        line-height: 40px;
+        width: 217px;
+        color: #ffffff;
+    }
+
+    .info-botao span {
+        font-size: 35px;
+        background-color: #AC947E;
+        padding: 5px;
+        color: #4B3F35;
+        width: fit-content;
+
+    }
+
+}
+
+
+/*--NOTEBOOK--*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .secoes {
+        width: 100%;
+        height: 760px;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .secao {
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/secao-1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .content {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .logo {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 35px;
+        font-family: Playfair Display;
+        font-weight: 500;
+        line-height: 40px;
+        width: 50%;
+        color: #1E1E1E;
+        margin-bottom: 10px;
+
+    }
+
+    .title span {
+        color: #A48A72;
+        font-style: italic;
+    }
+
+
+    .description {
+        font-size: 15px;
+        font-family: Montserrat;
+        width: 44%;
+        color: #1E1E1E;
+        margin-bottom: 20px;
+    }
+
+    .lista {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+        flex-direction: column;
+
+    }
+
+    .lista-item {
+        background-image: linear-gradient(160deg, #FBEDDE, #fbedde00);
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 14px;
+        color: #5B5B5B;
+        font-family: Montserrat;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 50%;
+        align-content: flex-start;
+    }
+
+    .lista-item p {
+        width: 94%;
+    }
+
+
+    .perfil {
+        width: 350px;
+        height: 67px;
+        background-color: #FBEDDE;
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        gap: 10px;
+        padding: 0px 8px;
+        margin-bottom: 20px;
+
+    }
+
+    .info-perfil {
+        font-size: 15px;
+        font-family: Montserrat;
+        color: #4E4E4E;
+
+    }
+
+    .info-perfil span {
+        color: #4E4E4E;
+        font-weight: 700;
+    }
+
+    .perfil img {
+        border: solid 5px;
+        border-radius: 50px;
+        border-color: #D2B9A2;
+    }
+
+    .content a {
+        width: 350px;
+        height: 60px;
+        background-color: #A4896F;
+        font-size: 18px;
+        text-decoration: none;
+        color: #ffffff;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 90px;
+        font-family: Montserrat;
+    }
+
+    .navegacao {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border-top: 2px solid;
+        border-image-source: linear-gradient(to right, #7E6B5A, #7e6b5a00 55%);
+        border-image-slice: 1;
+        margin-top: 30px;
+
+    }
+
+    .arrows {
+        gap: 10px;
+        display: flex;
+        margin-top: -28px;
+        z-index: 100;
+    }
+
+    .seta {
+        width: 38px;
+        height: 38px;
+        border-radius: 40px;
+        border: none;
+        background-color: #7E6B5A;
+    }
+
+    .secao-2 {
+        height: 100%;
+        overflow-x: hidden;
+        padding: 30px 0px;
+    }
+
+    .botao {
+        height: 268px;
+        width: 532px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .img-botao {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .list-botoes {
+        margin-left: -500px !important;
+        gap: 15px;
+        padding-right: 40px;
+    }
+
+    .botao-selecionado {
+        border-width: 2px;
+    }
+
+    .img-botao {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+
+    .primeiro {
+        background-image: url(/images/botao01.png);
+    }
+
+    .segundo {
+        background-image: url(/images/botao02.png);
+    }
+
+    .terceiro {
+        background-image: url(/images/botao03.png);
+    }
+
+    .quarto {
+        background-image: url(/images/botao04.png);
+    }
+
+
+    .info-botao {
+        position: absolute;
+        height: 268px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+        gap: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .info-botao p {
+        font-size: 35px;
+        font-family: Playfair Display;
+        font-weight: 400;
+        line-height: 40px;
+        width: 217px;
+        color: #ffffff;
+    }
+
+    .info-botao span {
+        font-size: 35px;
+        background-color: #AC947E;
+        padding: 5px;
+        color: #4B3F35;
+        width: fit-content;
+
+    }
+
+}
+
+
+/*--TABLET--*/
+@media (min-width: 481px) and (max-width: 768px) {
+    .secoes {
+        width: 100%;
+        height: 130vh;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .img-mobile {
+        display: block;
+        height: 40%;
+        width: 100%;
+        object-fit: cover;
+        border-bottom: solid 3px #D2B9A2;
+    }
+
+    .secao {
+        width: 100%;
+        height: 100%;
+        background-image: url(none);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #E9D8C6;
+    }
+
+    .content {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .logo {
+        width: 180px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 30px;
+        font-family: Playfair Display;
+        font-weight: 500;
+        line-height: 38px;
+        width: 100%;
+        color: #1E1E1E;
+        margin-bottom: 5px;
+
+    }
+
+    .title span {
+        color: #A48A72;
+        font-style: italic;
+    }
+
+
+    .description {
+        font-size: 15px;
+        font-family: Montserrat;
+        width: 95%;
+        color: #1E1E1E;
+        margin-bottom: 25px;
+    }
+
+    .lista {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+
+    }
+
+    .lista-item {
+        background-image: linear-gradient(160deg, #FBEDDE, #fbedde00);
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 15px;
+        color: #5B5B5B;
+        font-family: Montserrat;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .lista-item p {
+        width: 94%;
+    }
+
+
+    .perfil {
+        width: 350px;
+        height: 67px;
+        background-color: #FBEDDE;
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        gap: 10px;
+        padding: 0px 8px;
+        margin-bottom: 10px;
+
+    }
+
+    .info-perfil {
+        font-size: 15px;
+        font-family: Montserrat;
+        color: #4E4E4E;
+
+    }
+
+    .info-perfil span {
+        color: #4E4E4E;
+        font-weight: 700;
+    }
+
+    .perfil img {
+        border: solid 5px;
+        border-radius: 50px;
+        border-color: #D2B9A2;
+    }
+
+    .content a {
+        width: 350px;
+        height: 60px;
+        background-color: #A4896F;
+        font-size: 18px;
+        text-decoration: none;
+        color: #ffffff;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 90px;
+        font-family: Montserrat;
+    }
+
+    .navegacao {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border-top: 2px solid #7E6B5A;
+        margin-top: 30px;
+
+    }
+
+    .arrows {
+        gap: 10px;
+        display: flex;
+        margin-top: -28px;
+        z-index: 100;
+    }
+
+    .seta {
+        width: 38px;
+        height: 38px;
+        border-radius: 40px;
+        border: none;
+        background-color: #7E6B5A;
+    }
+
+    .secao-2 {
+        height: 100%;
+        overflow-x: hidden;
+        padding: 30px 0px;
+    }
+
+    .botao {
+        height: 268px;
+        width: 532px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .img-botao {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .list-botoes {
+        margin-left: -500px !important;
+        gap: 15px;
+        padding-right: 40px;
+    }
+
+    .botao-selecionado {
+        border-width: 2px;
+    }
+
+    .img-botao {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+
+    .primeiro {
+        background-image: url(/images/botao01.png);
+    }
+
+    .segundo {
+        background-image: url(/images/botao02.png);
+    }
+
+    .terceiro {
+        background-image: url(/images/botao03.png);
+    }
+
+    .quarto {
+        background-image: url(/images/botao04.png);
+    }
+
+
+
+
+    .info-botao {
+        position: absolute;
+        height: 268px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+        gap: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .info-botao p {
+        font-size: 35px;
+        font-family: Playfair Display;
+        font-weight: 400;
+        line-height: 40px;
+        width: 217px;
+        color: #ffffff;
+    }
+
+    .info-botao span {
+        font-size: 35px;
+        background-color: #AC947E;
+        padding: 5px;
+        color: #4B3F35;
+        width: fit-content;
+
+    }
+
+}
+
+
+/*--CELULAR--*/
+@media (min-width: 361px) and (max-width: 480px) {
+    .secoes {
+        width: 100%;
+        height: 130vh;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .img-mobile {
+        display: block;
+        height: 40%;
+        width: 100%;
+        object-fit: cover;
+        border-bottom: solid 3px #D2B9A2;
+    }
+
+    .secao {
+        width: 100%;
+        height: 100%;
+        background-image: url(none);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #E9D8C6;
+    }
+
+    .content {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+        margin-top: 30px;
+
+    }
+
+    .logo {
+        width: 180px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 30px;
+        font-family: Playfair Display;
+        font-weight: 500;
+        line-height: 38px;
+        width: 100%;
+        color: #1E1E1E;
+        margin-bottom: 5px;
+
+    }
+
+    .title span {
+        color: #A48A72;
+        font-style: italic;
+    }
+
+
+    .description {
+        font-size: 15px;
+        font-family: Montserrat;
+        width: 95%;
+        color: #1E1E1E;
+        margin-bottom: 25px;
+    }
+
+    .lista {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+
+    }
+
+    .lista-item {
+        background-image: linear-gradient(160deg, #FBEDDE, #fbedde00);
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 15px;
+        color: #5B5B5B;
+        font-family: Montserrat;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .lista-item p {
+        width: 94%;
+    }
+
+
+    .perfil {
+        width: 350px;
+        height: 67px;
+        background-color: #FBEDDE;
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        gap: 10px;
+        padding: 0px 8px;
+        margin-bottom: 10px;
+
+    }
+
+    .info-perfil {
+        font-size: 15px;
+        font-family: Montserrat;
+        color: #4E4E4E;
+
+    }
+
+    .info-perfil span {
+        color: #4E4E4E;
+        font-weight: 700;
+    }
+
+    .perfil img {
+        border: solid 5px;
+        border-radius: 50px;
+        border-color: #D2B9A2;
+    }
+
+    .content a {
+        width: 350px;
+        height: 60px;
+        background-color: #A4896F;
+        font-size: 18px;
+        text-decoration: none;
+        color: #ffffff;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 90px;
+        font-family: Montserrat;
+    }
+
+    .navegacao {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border-top: 2px solid #7E6B5A;
+        margin-top: 30px;
+
+    }
+
+    .arrows {
+        gap: 10px;
+        display: flex;
+        margin-top: -28px;
+        z-index: 100;
+    }
+
+    .seta {
+        width: 38px;
+        height: 38px;
+        border-radius: 40px;
+        border: none;
+        background-color: #7E6B5A;
+    }
+
+    .secao-2 {
+        height: 100%;
+        overflow-x: hidden;
+        padding: 30px 0px;
+    }
+
+    .list-botoes {
+        gap: 30px;
+        display: flex;
+    }
+
+    .botao {
+        height: 400px;
+        width: 360px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .img-botao {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .list-botoes {
+        margin-left: -335px !important;
+        gap: 15px;
+        padding-right: 40px;
+    }
+
+    .botao-selecionado {
+        border-width: 2px;
+    }
+
+
+    .primeiro {
+        background-image: url(/images/botao-1m.png);
+    }
+
+    .segundo {
+        background-image: url(/images/botao-2m.png);
+    }
+
+    .terceiro {
+        background-image: url(/images/botao-3m.png);
+    }
+
+    .quarto {
+        background-image: url(/images/botao-4m.png);
+    }
+
+
+    .info-botao {
+        position: absolute;
+        height: 268px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+        gap: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 45%;
+    }
+
+    .info-botao p {
+        font-size: 35px;
+        font-family: Playfair Display;
+        font-weight: 400;
+        line-height: 40px;
+        width: 217px;
+        color: #ffffff;
+    }
+
+    .info-botao span {
+        font-size: 35px;
+        background-color: #AC947E;
+        padding: 5px;
+        color: #4B3F35;
+        width: fit-content;
+
+    }
+
+}
+
+/*--CELULAR MEORES--*/
+@media (min-width: 0px) and (max-width: 360px) {
+    .secoes {
+        width: 100%;
+        height: 121vh;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .img-mobile {
+        display: block;
+        height: 40%;
+        width: 100%;
+        object-fit: cover;
+        border-bottom: solid 3px #D2B9A2;
+    }
+
+    .secao {
+        width: 100%;
+        height: 100%;
+        background-image: url(none);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #E9D8C6;
+    }
+
+    .content {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+        margin-top: 30px;
+
+    }
+
+    .logo {
+        width: 170px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 25px;
+        font-family: Playfair Display;
+        font-weight: 500;
+        line-height: 30px;
+        width: 100%;
+        color: #1E1E1E;
+        margin-bottom: 5px;
+
+    }
+
+    .title span {
+        color: #A48A72;
+        font-style: italic;
+    }
+
+
+    .description {
+        font-size: 14px;
+        font-family: Montserrat;
+        width: 95%;
+        color: #1E1E1E;
+        margin-bottom: 25px;
+    }
+
+    .lista {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+
+    }
+
+    .lista-item {
+        background-image: linear-gradient(160deg, #FBEDDE, #fbedde00);
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 15px;
+        color: #5B5B5B;
+        font-family: Montserrat;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .lista-item p {
+        width: 94%;
+    }
+
+
+    .perfil {
+        width: 95%;
+        height: 67px;
+        background-color: #FBEDDE;
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        gap: 10px;
+        padding: 0px 8px;
+        margin-bottom: 10px;
+
+    }
+
+    .info-perfil {
+        font-size: 13px;
+        font-family: Montserrat;
+        color: #4E4E4E;
+
+    }
+
+    .info-perfil span {
+        color: #4E4E4E;
+        font-weight: 700;
+    }
+
+    .perfil img {
+        border: solid 5px;
+        border-radius: 50px;
+        border-color: #D2B9A2;
+    }
+
+    .content a {
+        width: 95%;
+        height: 60px;
+        background-color: #A4896F;
+        font-size: 16px;
+        text-decoration: none;
+        color: #ffffff;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 90px;
+        font-family: Montserrat;
+    }
+
+    .navegacao {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border-top: 2px solid #7E6B5A;
+        margin-top: 30px;
+
+    }
+
+    .arrows {
+        gap: 10px;
+        display: flex;
+        margin-top: -35px;
+        z-index: 100;
+    }
+
+    .seta {
+        width: 38px;
+        height: 38px;
+        border-radius: 40px;
+        border: none;
+        background-color: #7E6B5A;
+    }
+
+    .secao-2 {
+        height: 100%;
+        overflow-x: hidden;
+        padding: 30px 0px;
+    }
+
+    .list-botoes {
+        gap: 30px;
+        display: flex;
+    }
+
+    .botao {
+        height: 400px;
+        width: 320px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .img-botao {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .list-botoes {
+        margin-left: -323px !important;
+        gap: 15px;
+        padding-right: 40px;
+    }
+
+    .botao-selecionado {
+        border-width: 2px;
+    }
+
+
+    .primeiro {
+        background-image: url(/images/botao-1m.png);
+    }
+
+    .segundo {
+        background-image: url(/images/botao-2m.png);
+    }
+
+    .terceiro {
+        background-image: url(/images/botao-3m.png);
+    }
+
+    .quarto {
+        background-image: url(/images/botao-4m.png);
+    }
+
+
+    .info-botao {
+        position: absolute;
+        height: 268px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+        gap: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 45%;
+    }
+
+    .info-botao p {
+        font-size: 35px;
+        font-family: Playfair Display;
+        font-weight: 400;
+        line-height: 40px;
+        width: 217px;
+        color: #ffffff;
+    }
+
+    .info-botao span {
+        font-size: 35px;
+        background-color: #AC947E;
+        padding: 5px;
+        color: #4B3F35;
+        width: fit-content;
+
+    }
+
+}
+
+
+
+
+/* =========================================
+   1. ANIMAÇÕES DAS SEÇÕES
+   ========================================= */
+.secao {
+    /* Removemos transition genérica para não conflitar com a animation */
+    display: none;
+    /* JS controla o display flex */
+}
+
+.secao-entrando {
+    animation: slideInFromTop 0.8s ease forwards;
+    display: flex;
+    /* Garante que apareça durante a animação */
+}
+
+.secao-saindo {
+    animation: slideOutToBottom 0.8s ease forwards;
+    display: flex;
+    /* Garante que apareça durante a animação */
+}
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOutToBottom {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(30px);
+    }
+}
+
+/* =========================================
+   2. CONTAINER DO SLIDER (LISTA)
+   ========================================= */
+.list-botoes {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    /* max-content é CRÍTICO para os clones não quebrarem linha */
+    width: max-content;
+    align-items: center;
+
+    /* Alinhamento e Buffer */
+    margin-left: -270px;
+    padding-right: 100px;
+    /* Espaço para o clone fantasma aparecer */
+
+    will-change: transform;
+    box-sizing: border-box;
+    /* Removemos transition CSS daqui pois o JS controla isso agora */
+}
+
+/* Removemos efeitos de máscara antigos */
+.list-botoes::before,
+.list-botoes::after {
+    display: none;
+}
+
+/* =========================================
+   3. ESTILO DOS BOTÕES
+   ========================================= */
+.botao {
+    position: relative;
+    flex-shrink: 0;
+    /* Impede que o botão amasse */
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    /* Estado padrão (não selecionado) */
+    opacity: 0.7;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.botao:hover {
+    opacity: 1;
+    /* Feedback visual ao passar o mouse */
+}
+
+/* Botão Selecionado */
+.botao-selecionado {
+    background-color: transparent;
+    opacity: 1 !important;
+    z-index: 10;
+    cursor: default;
+}
