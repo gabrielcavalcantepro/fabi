@@ -286,7 +286,7 @@ body {
 
 
 /*--DESKTOP--*/
-@media (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .secoes {
         width: 100%;
         height: 650px;
@@ -556,7 +556,7 @@ body {
 
 
 /*--NOTEBOOK--*/
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .secoes {
         width: 100%;
         height: 760px;
@@ -824,7 +824,7 @@ body {
 
 
 /*--TABLET--*/
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .secoes {
         width: 100%;
         height: 130vh;
@@ -1109,7 +1109,7 @@ body {
 
 
 /*--CELULAR--*/
-@media (max-width: 480px) {
+@media (min-width: 361px) and (max-width: 480px) {
     .secoes {
         width: 100%;
         height: 130vh;
@@ -1401,7 +1401,7 @@ body {
 }
 
 /*--CELULAR MEORES--*/
-@media (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 360px) {
     .secoes {
         width: 100%;
         height: 121vh;
