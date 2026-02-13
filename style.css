@@ -286,7 +286,7 @@ body {
 
 
 /*--DESKTOP--*/
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (max-width: 1440px) {
     .secoes {
         width: 100%;
         height: 650px;
@@ -556,7 +556,7 @@ body {
 
 
 /*--NOTEBOOK--*/
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .secoes {
         width: 100%;
         height: 760px;
@@ -824,7 +824,7 @@ body {
 
 
 /*--TABLET--*/
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
     .secoes {
         width: 100%;
         height: 130vh;
@@ -865,15 +865,15 @@ body {
     }
 
     .logo {
-        width: 180px;
-        margin-bottom: 10px;
+        width: 250px;
+        margin-bottom: 20px;
     }
 
     .title {
-        font-size: 30px;
+        font-size: 45px;
         font-family: Playfair Display;
         font-weight: 500;
-        line-height: 38px;
+        line-height: 50px;
         width: 100%;
         color: #1E1E1E;
         margin-bottom: 5px;
@@ -887,7 +887,7 @@ body {
 
 
     .description {
-        font-size: 15px;
+        font-size: 20px;
         font-family: Montserrat;
         width: 95%;
         color: #1E1E1E;
@@ -924,9 +924,15 @@ body {
         width: 94%;
     }
 
+    .perfil-botao {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
 
     .perfil {
-        width: 350px;
+        width: 490px;
         height: 67px;
         background-color: #FBEDDE;
         display: flex;
@@ -934,12 +940,12 @@ body {
         border-radius: 80px;
         gap: 10px;
         padding: 0px 8px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 
     }
 
     .info-perfil {
-        font-size: 15px;
+        font-size: 17px;
         font-family: Montserrat;
         color: #4E4E4E;
 
@@ -957,10 +963,11 @@ body {
     }
 
     .content a {
-        width: 350px;
-        height: 60px;
+        width: 430px;
+        height: 75px;
         background-color: #A4896F;
         font-size: 18px;
+        font-weight: 500;
         text-decoration: none;
         color: #ffffff;
         gap: 15px;
@@ -1094,7 +1101,7 @@ body {
 
 
 /*--CELULAR--*/
-@media (min-width: 361px) and (max-width: 480px) {
+@media (max-width: 480px) {
     .secoes {
         width: 100%;
         height: 130vh;
@@ -1134,6 +1141,19 @@ body {
         margin-top: 30px;
 
     }
+
+    .content.mobile {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 30px;
+
+    }
+
 
     .logo {
         width: 180px;
@@ -1195,9 +1215,14 @@ body {
         width: 94%;
     }
 
+    .perfil-botao {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
 
     .perfil {
-        width: 350px;
+        width: 100%;
         height: 67px;
         background-color: #FBEDDE;
         display: flex;
@@ -1222,16 +1247,18 @@ body {
     }
 
     .perfil img {
-        border: solid 5px;
+        border: solid 3px;
         border-radius: 50px;
         border-color: #D2B9A2;
+        width: 55px;
     }
 
     .content a {
-        width: 350px;
-        height: 60px;
+        width: 100%;
+        height: 70px;
         background-color: #A4896F;
         font-size: 18px;
+        font-weight: 500;
         text-decoration: none;
         color: #ffffff;
         gap: 15px;
@@ -1247,16 +1274,15 @@ body {
         height: 30px;
         display: flex;
         align-items: center;
-        border-top: 2px solid #7E6B5A;
-        margin-top: 30px;
 
     }
+
 
     .arrows {
         gap: 10px;
         display: flex;
-        margin-top: -35px;
         z-index: 100;
+        margin-top: -17px;
     }
 
     .seta {
@@ -1266,6 +1292,15 @@ body {
         border: none;
         background-color: #7E6B5A;
     }
+
+
+    .line {
+        width: 100%;
+        height: 2px;
+        background-color: #7E6B5A;
+        position: absolute;
+    }
+
 
     .secao-2 {
         height: 100%;
@@ -1358,7 +1393,7 @@ body {
 }
 
 /*--CELULAR MEORES--*/
-@media (min-width: 0px) and (max-width: 360px) {
+@media (max-width: 360px) {
     .secoes {
         width: 100%;
         height: 121vh;
@@ -1394,6 +1429,18 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        margin: 0 auto;
+        margin-top: 30px;
+
+    }
+
+    .content.mobile {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
         margin: 0 auto;
         margin-top: 30px;
 
@@ -1461,7 +1508,7 @@ body {
 
 
     .perfil {
-        width: 95%;
+        width: 100%;
         height: 67px;
         background-color: #FBEDDE;
         display: flex;
@@ -1486,16 +1533,18 @@ body {
     }
 
     .perfil img {
-        border: solid 5px;
+        border: solid 3px;
         border-radius: 50px;
         border-color: #D2B9A2;
+        width: 55px;
     }
 
     .content a {
-        width: 95%;
+        width: 100%;
         height: 60px;
         background-color: #A4896F;
         font-size: 16px;
+        font-weight: 500;
         text-decoration: none;
         color: #ffffff;
         gap: 15px;
@@ -1511,7 +1560,6 @@ body {
         height: 30px;
         display: flex;
         align-items: center;
-        border-top: 2px solid #7E6B5A;
         margin-top: 30px;
 
     }
@@ -1519,7 +1567,7 @@ body {
     .arrows {
         gap: 10px;
         display: flex;
-        margin-top: -35px;
+        margin-top: -17px;
         z-index: 100;
     }
 
