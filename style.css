@@ -854,11 +854,12 @@ body {
         background-color: #E9D8C6;
     }
 
-    .content {
+    .content.mobile {
         width: 90%;
         height: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
         margin: 0 auto;
 
@@ -988,11 +989,18 @@ body {
 
     }
 
+    .line {
+        width: 100%;
+        height: 2px;
+        background-color: #7E6B5A;
+        position: absolute;
+    }
+
     .arrows {
-        gap: 10px;
+        gap: 20px;
         display: flex;
-        margin-top: -28px;
         z-index: 100;
+        margin-top: 0px;
     }
 
     .seta {
