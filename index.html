@@ -4,266 +4,2207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabi Souza</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Links Fabi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /*---TEXTOS---*/
+
+        h1 {
+            font-family: 'Playfair Display';
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-family: 'Playfair Display';
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: 'Montserrat';
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        p span {
+            font-family: 'Montserrat';
+        }
+
+        h1 span {
+            color: #A48A72;
+            font-style: italic;
+        }
+
+
+
+        @media (min-width: 400px) {
+            h1 {
+                font-family: 'Playfair Display';
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 600;
+            }
+
+            h2 {
+                font-family: 'Playfair Display';
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 600;
+            }
+
+            p {
+                font-family: 'Montserrat';
+                font-size: 15px;
+                line-height: 25px;
+            }
+
+            p span {
+                font-family: 'Montserrat';
+            }
+
+            h1 span {
+                color: #A48A72;
+                font-style: italic;
+            }
+
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-family: 'Playfair Display';
+                font-size: 30px;
+                line-height: 35px;
+                font-weight: 600;
+            }
+
+            h2 {
+                font-family: 'Playfair Display';
+                font-size: 30px;
+                line-height: 35px;
+                font-weight: 600;
+            }
+
+            p {
+                font-family: 'Montserrat';
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            p span {
+                font-family: 'Montserrat';
+            }
+
+            h1 span {
+                color: #A48A72;
+                font-style: italic;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            h1 {
+                font-family: 'Playfair Display';
+                font-size: 35px;
+                line-height: 45px;
+                font-weight: 600;
+            }
+
+            h2 {
+                font-family: 'Playfair Display';
+                font-size: 35px;
+                line-height: 45px;
+                font-weight: 600;
+            }
+
+            p {
+                font-family: 'Montserrat';
+                font-size: 18px;
+                line-height: 23px;
+            }
+
+            p span {
+                font-family: 'Montserrat';
+            }
+
+            h1 span {
+                color: #A48A72;
+                font-style: italic;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            h1 {
+                font-family: 'Playfair Display';
+                font-size: 40px;
+                line-height: 50px;
+                font-weight: 600;
+            }
+
+            h2 {
+                font-family: 'Playfair Display';
+                font-size: 40px;
+                line-height: 50px;
+                font-weight: 600;
+            }
+
+            p {
+                font-family: 'Montserrat';
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+            p span {
+                font-family: 'Montserrat';
+            }
+
+            h1 span {
+                color: #A48A72;
+                font-style: italic;
+            }
+
+        }
+
+
+        /*---CONTEÚDO DO MEIO---*/
+
+        .content {
+            width: 90%;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+
+        @media (min-width: 400px) {
+            .content {
+                width: 90%;
+                margin: 0 auto;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .content {
+                width: 80%;
+                margin: 0 auto;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            .content {
+                width: 66.67%;
+                margin: 0 auto;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+        }
+
+
+        /*---SEÇÃO 1---*/
+
+        .secao1 .fundo1 {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .secao1 {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .secao1 .content {
+            justify-content: start;
+            padding-top: 40px;
+        }
+
+
+        .secao1 .logo {
+            width: 150px;
+        }
+
+        .secao1 .content h1 {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .secao1 .content p {
+            width: 90%;
+            color: #706053;
+            margin-top: 20px;
+        }
+
+        .secao1 .content .perfil {
+            width: 100%;
+            height: fit-content;
+            background-color: #FBEDDE;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 8px;
+            gap: 10px;
+            border-radius: 40px;
+            margin-top: 20px;
+
+        }
+
+        .secao1 .content .perfil img {
+            width: 50px;
+            height: 50px;
+            border: solid 5px #D2B9A2;
+            border-radius: 45px;
+        }
+
+        .secao1 .content .perfil .content-perfil span {
+            font-size: 14px;
+            color: #4E4E4E;
+            font-weight: 600;
+            font-family: 'Montserrat';
+        }
+
+        .secao1 .content .perfil .content-perfil p {
+            font-size: 14px;
+            color: #4E4E4E;
+            width: 100%;
+            margin: 0;
+        }
+
+
+        @media (min-width: 400px) {
+            .secao1 .fundo1 {
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            .secao1 {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .secao1 .content {
+                justify-content: start;
+                padding-top: 40px;
+            }
+
+
+            .secao1 .logo {
+                width: 200px;
+            }
+
+            .secao1 .content h1 {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .secao1 .content p {
+                width: 90%;
+                color: #706053;
+                margin-top: 20px;
+            }
+
+            .secao1 .content .perfil {
+                width: fit-content;
+                height: fit-content;
+                background-color: #FBEDDE;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 8px 38px 8px 10px;
+                gap: 10px;
+                border-radius: 40px;
+                margin-top: 20px;
+
+            }
+
+            .secao1 .content .perfil img {
+                width: 50px;
+                height: 50px;
+                border: solid 5px #D2B9A2;
+                border-radius: 45px;
+            }
+
+            .secao1 .content .perfil .content-perfil span {
+                font-size: 15px;
+                color: #4E4E4E;
+                font-weight: 600;
+                font-family: 'Montserrat';
+            }
+
+            .secao1 .content .perfil .content-perfil p {
+                font-size: 15px;
+                color: #4E4E4E;
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .secao1 .fundo1 {
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+                height: 60vh;
+                z-index: -1;
+            }
+
+            .secao1 {
+                width: 100%;
+                height: 60vh;
+            }
+
+            .secao1 .content {
+                justify-content: center;
+                align-items: flex-start;
+                padding-top: 0px;
+            }
+
+
+            .secao1 .logo {
+                width: 200px;
+            }
+
+            .secao1 .content h1 {
+                width: 40%;
+                margin-top: 20px;
+            }
+
+            .secao1 .content p {
+                width: 40%;
+                line-height: 20px;
+                color: #706053;
+                margin-top: 20px;
+            }
+
+            .secao1 .content .perfil {
+                width: 46%;
+                height: fit-content;
+                background-color: #FBEDDE;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 8px 10px 8px 10px;
+                gap: 10px;
+                border-radius: 40px;
+                margin-top: 20px;
+
+            }
+
+            .secao1 .content .perfil img {
+                width: 50px;
+                height: 50px;
+                border: solid 5px #D2B9A2;
+                border-radius: 45px;
+            }
+
+            .secao1 .content .perfil .content-perfil span {
+                font-size: 13px;
+                color: #4E4E4E;
+                font-weight: 600;
+                font-family: 'Montserrat';
+            }
+
+            .secao1 .content .perfil .content-perfil p {
+                font-size: 12px;
+                color: #4E4E4E;
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .secao1 .fundo1 {
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+                height: 100vh;
+                z-index: -1;
+            }
+
+            .secao1 {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .secao1 .content {
+                justify-content: center;
+                align-items: flex-start;
+                padding-top: 0px;
+            }
+
+
+            .secao1 .logo {
+                width: 200px;
+            }
+
+            .secao1 .content h1 {
+                width: 40%;
+                margin-top: 20px;
+            }
+
+            .secao1 .content p {
+                width: 40%;
+                line-height: 25px;
+                color: #706053;
+                margin-top: 20px;
+            }
+
+            .secao1 .content .perfil {
+                width: 46%;
+                height: fit-content;
+                background-color: #FBEDDE;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 10px 10px 10px 10px;
+                gap: 10px;
+                border-radius: 40px;
+                margin-top: 20px;
+
+            }
+
+            .secao1 .content .perfil img {
+                width: 50px;
+                height: 50px;
+                border: solid 5px #D2B9A2;
+                border-radius: 45px;
+            }
+
+            .secao1 .content .perfil .content-perfil span {
+                font-size: 16px;
+                color: #4E4E4E;
+                font-weight: 600;
+                font-family: 'Montserrat';
+            }
+
+            .secao1 .content .perfil .content-perfil p {
+                font-size: 16px;
+                color: #4E4E4E;
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        @media (min-width: 1024px) and (min-height: 1180px) {
+            .secao1 .fundo1 {
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+                height: 51vh;
+                z-index: -1;
+            }
+
+            .secao1 {
+                width: 100%;
+                height: 50vh;
+            }
+
+            .secao1 .content {
+                justify-content: center;
+                align-items: flex-start;
+                padding-top: 0px;
+            }
+
+
+            .secao1 .logo {
+                width: 200px;
+            }
+
+            .secao1 .content h1 {
+                width: 40%;
+                margin-top: 20px;
+            }
+
+            .secao1 .content p {
+                width: 40%;
+                line-height: 25px;
+                color: #706053;
+                margin-top: 20px;
+            }
+
+            .secao1 .content .perfil {
+                width: 46%;
+                height: fit-content;
+                background-color: #FBEDDE;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 10px 10px 10px 10px;
+                gap: 10px;
+                border-radius: 40px;
+                margin-top: 20px;
+
+            }
+
+            .secao1 .content .perfil img {
+                width: 50px;
+                height: 50px;
+                border: solid 5px #D2B9A2;
+                border-radius: 45px;
+            }
+
+            .secao1 .content .perfil .content-perfil span {
+                font-size: 16px;
+                color: #4E4E4E;
+                font-weight: 600;
+                font-family: 'Montserrat';
+            }
+
+            .secao1 .content .perfil .content-perfil p {
+                font-size: 16px;
+                color: #4E4E4E;
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .secao1 .fundo1 {
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+                height: 100vh;
+                z-index: -1;
+            }
+
+            .secao1 {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .secao1 .content {
+                justify-content: center;
+                align-items: flex-start;
+                padding-top: 0px;
+            }
+
+
+            .secao1 .logo {
+                width: 200px;
+            }
+
+            .secao1 .content h1 {
+                width: 40%;
+                margin-top: 20px;
+            }
+
+            .secao1 .content p {
+                width: 40%;
+                line-height: 25px;
+                color: #706053;
+                margin-top: 20px;
+            }
+
+            .secao1 .content .perfil {
+                width: 46%;
+                max-width: 370px;
+                height: fit-content;
+                background-color: #FBEDDE;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 10px 10px 10px 10px;
+                gap: 10px;
+                border-radius: 40px;
+                margin-top: 20px;
+
+            }
+
+            .secao1 .content .perfil img {
+                width: 50px;
+                height: 50px;
+                border: solid 5px #D2B9A2;
+                border-radius: 45px;
+            }
+
+            .secao1 .content .perfil .content-perfil span {
+                font-size: 16px;
+                color: #4E4E4E;
+                font-weight: 600;
+                font-family: 'Montserrat';
+            }
+
+            .secao1 .content .perfil .content-perfil p {
+                font-size: 16px;
+                color: #4E4E4E;
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            .secao1 .fundo1 {
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            .secao1 {
+                width: 100%;
+                height: 100vh;
+            }
+
+
+            .secao1 .logo {
+                width: 250px;
+            }
+
+            .secao1 .content h1 {
+                width: 40%;
+                margin-top: 20px;
+            }
+
+            .secao1 .content p {
+                width: 35%;
+                color: #706053;
+                margin-top: 20px;
+            }
+
+            .secao1 .content .perfil {
+                width: 400px;
+                max-width: 500px;
+                height: fit-content;
+                background-color: #FBEDDE;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 10px 38px 10px 10px;
+                gap: 10px;
+                border-radius: 40px;
+                margin-top: 20px;
+
+            }
+
+            .secao1 .content .perfil img {
+                width: 50px;
+                height: 50px;
+                border: solid 5px #D2B9A2;
+                border-radius: 45px;
+            }
+
+            .secao1 .content .perfil .content-perfil span {
+                font-size: 18px;
+                color: #4E4E4E;
+                font-weight: 600;
+                font-family: 'Montserrat';
+            }
+
+            .secao1 .content .perfil .content-perfil p {
+                font-size: 18px;
+                color: #4E4E4E;
+                width: 100%;
+                margin: 0;
+            }
+
+        }
+
+
+        /*---SEÇÃO 2---*/
+
+
+        .secao2 {
+            height: fit-content;
+            width: 100%;
+            padding: 80px 0px;
+            background-color: #E9D8C6;
+        }
+
+        .secao2 .content {
+            align-items: center;
+        }
+
+        .faq-toggle {
+            display: none;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            padding: 0px 20px;
+
+        }
+
+        .faq-question .content-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 60%;
+        }
+
+        .faq-question .content-bottom span {
+            color: #4B3F35;
+            padding: 0px 5px;
+            background-color: #AC947E;
+            font-family: "Playfair Display";
+            font-size: 20px;
+        }
+
+        .faq-question .content-bottom h2 {
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 20px;
+            width: 90%;
+        }
+
+        .faq-question .content-bottom p {
+            color: #D7CFC9;
+            margin-top: 10px;
+            width: 90%;
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+
+        .faq-question#bottom1 {
+            background-image: url(images/botao1.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 230px;
+            width: 100%;
+        }
+
+        .faq-question#bottom2 {
+            background-image: url(images/botao2.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 240px;
+            width: 100%;
+            ;
+        }
+
+        .faq-question#bottom3 {
+            background-image: url(images/botao3.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 240px;
+            width: 100%;
+        }
+
+
+        .faq-answer-wrapper {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: all 0.4s ease-in-out;
+            width: 100%;
+        }
+
+        .faq-answer {
+            overflow: hidden;
+            margin-top: 35px;
+        }
+
+        .faq-toggle:checked~.faq-answer-wrapper {
+            grid-template-rows: 1fr;
+            margin-bottom: 80px;
+        }
+
+        .faq-answer-wrapper .faq-answer ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .faq-answer-wrapper .faq-answer ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            width: 100%;
+            height: 66px;
+            background: linear-gradient(85deg, #FBEDDE, #fbedde00);
+            border-radius: 10px;
+            padding: 0px 13px 0px 20px;
+            font-size: 14px;
+            line-height: 18px;
+            font-family: 'Montserrat';
+            color: #7B7977;
+            font-weight: 500;
+        }
+
+        .faq-answer-wrapper .faq-answer ul .cta {
+            background: linear-gradient(85deg, #7E6B5A, #97816D);
+        }
+
+        .faq-answer-wrapper .faq-answer ul .cta {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+            height: 66px;
+            border-radius: 10px;
+            padding: 0px 13px 0px 25px;
+            font-size: 15px;
+            line-height: 18px;
+            font-family: 'Montserrat';
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 500;
+            z-index: 1;
+            background: radial-gradient(circle at 0% 0%, #7E6B5A, transparent 50%),
+                radial-gradient(circle at 100% 100%, #97816D, transparent 50%),
+                radial-gradient(circle at 50% 50%, #7E6B5A, #97816D);
+            background-size: 250% 250%;
+            animation: liquidGradient 4s ease-in-out infinite;
+
+
+        }
+
+        .faq-answer-wrapper .faq-answer ul .cta span svg {
+            transition: all 0.4s ease;
+        }
+
+        .faq-answer-wrapper .faq-answer ul .cta:hover span svg {
+            transform: rotate(45deg);
+            transition: all 0.4s ease;
+        }
+
+        @keyframes liquidGradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .faq-answer-wrapper .faq-answer ul .cta span {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FBEDDE;
+            border-radius: 10px;
+        }
+
+        .whatsapp {
+            width: 100%;
+            height: 196px;
+            color: #6D6A66;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at 0% 0%, #fbedde00, transparent 50%),
+                radial-gradient(circle at 100% 100%, #F4E3D1, transparent 50%),
+                radial-gradient(circle at 50% 50%, #FBEDDE, #f4e3d100);
+            background-size: 250% 250%;
+            animation: liquidGradient 4s ease-in-out infinite;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .whatsapp h2 {
+            margin-top: 12px;
+            text-align: center;
+        }
+
+        .whatsapp p {
+            margin-top: 5px;
+            width: 90%;
+            text-align: center;
+            line-height: 20px;
+        }
+
+
+        @media (min-width: 400px) {
+
+            .secao2 {
+                height: fit-content;
+                width: 100%;
+                padding: 80px 0px;
+                background-color: #E9D8C6;
+            }
+
+            .secao2 .content {
+                align-items: center;
+            }
+
+            .faq-toggle {
+                display: none;
+            }
+
+            .faq-item {
+                margin-bottom: 15px;
+                width: 100%;
+                transition: all 0.3s ease;
+            }
+
+            .faq-question {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+                padding: 0px 20px;
+
+            }
+
+            .faq-question .content-bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: 56%;
+            }
+
+            .faq-question .content-bottom span {
+                color: #4B3F35;
+                padding: 0px 5px;
+                background-color: #AC947E;
+                font-family: "Playfair Display";
+                font-size: 22px;
+            }
+
+            .faq-question .content-bottom h2 {
+                color: #FFFFFF;
+                font-weight: 400;
+                font-size: 22px;
+                width: 90%;
+            }
+
+            .faq-question .content-bottom p {
+                color: #D7CFC9;
+                margin-top: 10px;
+                width: 90%;
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+
+            .faq-question#bottom1 {
+                background-image: url(images/botao1.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 230px;
+                width: 100%;
+            }
+
+            .faq-question#bottom2 {
+                background-image: url(images/botao2.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 230px;
+                width: 100%;
+
+            }
+
+            .faq-question#bottom3 {
+                background-image: url(images/botao3.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 230px;
+                width: 100%;
+            }
+
+
+            .faq-answer-wrapper {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: all 0.4s ease-in-out;
+                width: 100%;
+            }
+
+            .faq-answer {
+                overflow: hidden;
+                margin-top: 35px;
+            }
+
+            .faq-toggle:checked~.faq-answer-wrapper {
+                grid-template-rows: 1fr;
+                margin-bottom: 80px;
+            }
+
+            .faq-answer-wrapper .faq-answer ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 20px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .faq-answer-wrapper .faq-answer ul li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                width: 100%;
+                height: 66px;
+                background: linear-gradient(85deg, #FBEDDE, #fbedde00);
+                border-radius: 10px;
+                padding: 0px 13px 0px 20px;
+                font-size: 15px;
+                line-height: 20px;
+                font-family: 'Montserrat';
+                color: #7B7977;
+                font-weight: 500;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta {
+                background: linear-gradient(85deg, #7E6B5A, #97816D);
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                width: 100%;
+                height: 66px;
+                border-radius: 10px;
+                padding: 0px 13px 0px 25px;
+                font-size: 15px;
+                line-height: 18px;
+                font-family: 'Montserrat';
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: 500;
+                z-index: 1;
+                background: radial-gradient(circle at 0% 0%, #7E6B5A, transparent 50%),
+                    radial-gradient(circle at 100% 100%, #97816D, transparent 50%),
+                    radial-gradient(circle at 50% 50%, #7E6B5A, #97816D);
+                background-size: 250% 250%;
+                animation: liquidGradient 4s ease-in-out infinite;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta span svg {
+                transition: all 0.4s ease;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta:hover span svg {
+                transform: rotate(45deg);
+                transition: all 0.4s ease;
+            }
+
+            @keyframes liquidGradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta span {
+                width: 42px;
+                height: 42px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #FBEDDE;
+                border-radius: 10px;
+            }
+
+            .whatsapp {
+                width: 100%;
+                height: 196px;
+                color: #6D6A66;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: radial-gradient(circle at 0% 0%, #fbedde00, transparent 50%),
+                    radial-gradient(circle at 100% 100%, #F4E3D1, transparent 50%),
+                    radial-gradient(circle at 50% 50%, #FBEDDE, #f4e3d100);
+                background-size: 250% 250%;
+                animation: liquidGradient 4s ease-in-out infinite;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            .whatsapp h2 {
+                margin-top: 12px;
+                text-align: center;
+            }
+
+            .whatsapp p {
+                margin-top: 5px;
+                width: 90%;
+                text-align: center;
+                line-height: 20px;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            .secao2 {
+                height: fit-content;
+                width: 100%;
+                padding: 80px 0px;
+                background-color: #E9D8C6;
+            }
+
+            .secao2 .content {
+                align-items: center;
+            }
+
+            .faq-toggle {
+                display: none;
+            }
+
+            .faq-item {
+                margin-bottom: 15px;
+                width: 100%;
+                transition: all 0.3s ease;
+            }
+
+            .faq-question {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+                padding: 0px 20px;
+
+            }
+
+            .faq-question .content-bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: 50%;
+            }
+
+            .faq-question .content-bottom span {
+                font-size: 30px;
+                color: #4B3F35;
+                padding: 0px 5px;
+                background-color: #AC947E;
+                font-family: "Playfair Display";
+            }
+
+            .faq-question .content-bottom h2 {
+                color: #FFFFFF;
+                font-weight: 400;
+                font-size: 30px;
+            }
+
+            .faq-question .content-bottom p {
+                color: #D7CFC9;
+                margin-top: 10px;
+                width: 90%;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+
+            .faq-question#bottom1 {
+                background-image: url(images/botao1.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 279px;
+                width: 100%;
+            }
+
+            .faq-question#bottom2 {
+                background-image: url(images/botao2.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 279px;
+                width: 100%;
+                ;
+            }
+
+            .faq-question#bottom3 {
+                background-image: url(images/botao3.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 279px;
+                width: 100%;
+            }
+
+
+            .faq-answer-wrapper {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: all 0.4s ease-in-out;
+                width: 100%;
+            }
+
+            .faq-answer {
+                overflow: hidden;
+                margin-top: 35px;
+            }
+
+            .faq-toggle:checked~.faq-answer-wrapper {
+                grid-template-rows: 1fr;
+                margin-bottom: 80px;
+            }
+
+            .faq-answer-wrapper .faq-answer ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 20px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .faq-answer-wrapper .faq-answer ul li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                width: 45%;
+                height: 66px;
+                background: linear-gradient(85deg, #FBEDDE, #fbedde00);
+                border-radius: 10px;
+                padding: 0px 13px 0px 20px;
+                font-size: 14px;
+                line-height: 20px;
+                font-family: 'Montserrat';
+                color: #7B7977;
+                font-weight: 500;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta {
+                background: linear-gradient(85deg, #7E6B5A, #97816D);
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                width: 45%;
+                height: 66px;
+                border-radius: 10px;
+                padding: 0px 13px 0px 25px;
+                font-size: 14px;
+                line-height: 18px;
+                font-family: 'Montserrat';
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: 500;
+                z-index: 1;
+                background: radial-gradient(circle at 0% 0%, #7E6B5A, transparent 50%),
+                    radial-gradient(circle at 100% 100%, #97816D, transparent 50%),
+                    radial-gradient(circle at 50% 50%, #7E6B5A, #97816D);
+                background-size: 250% 250%;
+                animation: liquidGradient 4s ease-in-out infinite;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta span svg {
+                transition: all 0.4s ease;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta:hover span svg {
+                transform: rotate(45deg);
+                transition: all 0.4s ease;
+            }
+
+            @keyframes liquidGradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta span {
+                width: 42px;
+                height: 42px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #FBEDDE;
+                border-radius: 10px;
+            }
+
+            .whatsapp {
+                width: 600px;
+                height: 196px;
+                color: #6D6A66;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: radial-gradient(circle at 0% 0%, #fbedde00, transparent 50%),
+                    radial-gradient(circle at 100% 100%, #F4E3D1, transparent 50%),
+                    radial-gradient(circle at 50% 50%, #FBEDDE, #f4e3d100);
+                background-size: 250% 250%;
+                animation: liquidGradient 4s ease-in-out infinite;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            .whatsapp h2 {
+                margin-top: 12px;
+                text-align: center;
+            }
+
+            .whatsapp p {
+                margin-top: 5px;
+                width: 90%;
+                text-align: center;
+                line-height: 20px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+
+            .secao2 {
+                height: fit-content;
+                width: 100%;
+                padding: 80px 0px;
+                background-color: #E9D8C6;
+            }
+
+            .secao2 .content {
+                align-items: center;
+            }
+
+            .faq-toggle {
+                display: none;
+            }
+
+            .faq-item {
+                margin-bottom: 15px;
+                width: 100%;
+                max-width: 742px;
+                transition: all 0.3s ease;
+            }
+
+            .faq-question {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+                padding: 0px 40px;
+
+            }
+
+            .faq-question .content-bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: 55%;
+            }
+
+            .faq-question .content-bottom span {
+                font-size: 35px;
+                color: #4B3F35;
+                padding: 0px 5px;
+                background-color: #AC947E;
+                font-family: "Playfair Display";
+            }
+
+            .faq-question .content-bottom h2 {
+                color: #FFFFFF;
+                font-weight: 400;
+                font-size: 35px;
+            }
+
+            .faq-question .content-bottom p {
+                color: #D7CFC9;
+                margin-top: 10px;
+                width: 90%;
+                font-size: 18px;
+                line-height: 23px;
+            }
+
+
+            .faq-question#bottom1 {
+                background-image: url(images/botao1.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 345px;
+                width: 100%;
+                max-width: 742px;
+            }
+
+            .faq-question#bottom2 {
+                background-image: url(images/botao2.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 345px;
+                width: 100%;
+                max-width: 742px;
+                ;
+            }
+
+            .faq-question#bottom3 {
+                background-image: url(images/botao3.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 345px;
+                width: 100%;
+                max-width: 742px;
+            }
+
+
+            .faq-answer-wrapper {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: all 0.4s ease-in-out;
+                width: 100%;
+            }
+
+            .faq-answer {
+                overflow: hidden;
+                margin-top: 35px;
+            }
+
+            .faq-toggle:checked~.faq-answer-wrapper {
+                grid-template-rows: 1fr;
+                margin-bottom: 80px;
+            }
+
+            .faq-answer-wrapper .faq-answer ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 20px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .faq-answer-wrapper .faq-answer ul li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                width: 45%;
+                height: 66px;
+                background: linear-gradient(85deg, #FBEDDE, #fbedde00);
+                border-radius: 10px;
+                padding: 0px 13px 0px 20px;
+                font-size: 15px;
+                line-height: 20px;
+                font-family: 'Montserrat';
+                color: #7B7977;
+                font-weight: 500;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta {
+                background: linear-gradient(85deg, #7E6B5A, #97816D);
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                font-family: 'Montserrat';
+                font-weight: 500;
+                font-size: 17px;
+                text-align: center;
+                color: #ffffff;
+                cursor: pointer;
+                z-index: 1;
+                background: radial-gradient(circle at 0% 0%, #7E6B5A, transparent 50%),
+                    radial-gradient(circle at 100% 100%, #97816D, transparent 50%),
+                    radial-gradient(circle at 50% 50%, #7E6B5A, #97816D);
+                background-size: 250% 250%;
+                animation: liquidGradient 4s ease-in-out infinite;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta span svg {
+                transition: all 0.4s ease;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta:hover span svg {
+                transform: rotate(45deg);
+                transition: all 0.4s ease;
+            }
+
+            @keyframes liquidGradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta span {
+                width: 42px;
+                height: 42px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #FBEDDE;
+                border-radius: 10px;
+            }
+
+            .whatsapp {
+                width: 742px;
+                height: 196px;
+                color: #6D6A66;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: radial-gradient(circle at 0% 0%, #fbedde00, transparent 50%),
+                    radial-gradient(circle at 100% 100%, #F4E3D1, transparent 50%),
+                    radial-gradient(circle at 50% 50%, #FBEDDE, #f4e3d100);
+                background-size: 250% 250%;
+                animation: liquidGradient 4s ease-in-out infinite;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            .whatsapp h2 {
+                margin-top: 12px;
+                text-align: center;
+            }
+
+            .whatsapp p {
+                margin-top: 5px;
+                width: 60%;
+                text-align: center;
+                line-height: 20px;
+            }
+        }
+
+        @media (min-width: 1920px) {
+
+            .secao2 {
+                height: fit-content;
+                width: 100%;
+                padding: 80px 0px;
+                background-color: #E9D8C6;
+            }
+
+            .secao2 .content {
+                align-items: center;
+            }
+
+            .faq-toggle {
+                display: none;
+            }
+
+            .faq-item {
+                margin-bottom: 15px;
+                width: fit-content;
+                transition: all 0.3s ease;
+            }
+
+            .faq-question {
+                width: 742px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+                padding: 0px 50px;
+
+            }
+
+            .faq-question .content-bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: 305px;
+            }
+
+            .faq-question .content-bottom span {
+                color: #4B3F35;
+                font-size: 30px;
+                padding: 0px 5px;
+                background-color: #AC947E;
+                font-family: "Playfair Display";
+            }
+
+            .faq-question .content-bottom h2 {
+                font-size: 40px;
+                color: #FFFFFF;
+                font-weight: 400;
+            }
+
+            .faq-question .content-bottom p {
+                font-size: 18px;
+                color: #D7CFC9;
+                margin-top: 10px;
+            }
+
+
+            .faq-question#bottom1 {
+                background-image: url(images/botao1.png);
+                height: 345px;
+                width: 742px;
+            }
+
+            .faq-question#bottom2 {
+                background-image: url(images/botao2.png);
+                height: 345px;
+                width: 742px;
+            }
+
+            .faq-question#bottom3 {
+                background-image: url(images/botao3.png);
+                height: 345px;
+                width: 742px;
+            }
+
+
+            .faq-answer-wrapper {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: all 0.4s ease-in-out;
+                width: 742px;
+            }
+
+            .faq-answer {
+                overflow: hidden;
+                margin-top: 35px;
+            }
+
+            .faq-toggle:checked~.faq-answer-wrapper {
+                grid-template-rows: 1fr;
+                margin-bottom: 80px;
+            }
+
+            .faq-answer-wrapper .faq-answer ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 20px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .faq-answer-wrapper .faq-answer ul li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: 40%;
+                height: 66px;
+                background: linear-gradient(85deg, #FBEDDE, #fbedde00);
+                border-radius: 10px;
+                padding: 0px 13px;
+                font-size: 15px;
+                line-height: 20px;
+                font-family: 'Montserrat';
+                color: #7B7977;
+                font-weight: 500;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta {
+                background: linear-gradient(85deg, #7E6B5A, #97816D);
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                font-family: 'Montserrat';
+                font-weight: 500;
+                font-size: 18px;
+                text-align: center;
+                color: #ffffff;
+                cursor: pointer;
+                z-index: 1;
+                background: radial-gradient(circle at 0% 0%, #7E6B5A, transparent 50%),
+                    radial-gradient(circle at 100% 100%, #97816D, transparent 50%),
+                    radial-gradient(circle at 50% 50%, #7E6B5A, #97816D);
+                background-size: 250% 250%;
+                animation: liquidGradient 4s ease-in-out infinite;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta span svg {
+                transition: all 0.4s ease;
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta:hover span svg {
+                transform: rotate(45deg);
+                transition: all 0.4s ease;
+            }
+
+            @keyframes liquidGradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            .faq-answer-wrapper .faq-answer ul .cta span {
+                width: 42px;
+                height: 42px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #FBEDDE;
+                border-radius: 10px;
+            }
+
+            .whatsapp {
+                width: 735px;
+                height: 196px;
+                color: #6D6A66;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: radial-gradient(circle at 0% 0%, #fbedde00, transparent 50%),
+                    radial-gradient(circle at 100% 100%, #F4E3D1, transparent 50%),
+                    radial-gradient(circle at 50% 50%, #FBEDDE, #f4e3d100);
+                background-size: 250% 250%;
+                animation: liquidGradient 4s ease-in-out infinite;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            .whatsapp h2 {
+                margin-top: 12px;
+            }
+
+            .whatsapp p {
+                margin-top: 5px;
+            }
+        }
+
+
+        /*---RODAPÉ---*/
+
+        .rodape {
+            height: 40px;
+            background-color: #E9D8C6;
+            border-top: solid #D7C3AE 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rodape p {
+            font-size: 12px;
+            color: #74695E;
+
+        }
+
+
+        @media (min-width: 400px) {
+            .rodape {
+                height: 40px;
+                background-color: #E9D8C6;
+                border-top: solid #D7C3AE 1px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .rodape p {
+                font-size: 12px;
+                color: #74695E;
+
+            }
+        }
+
+        @media (min-width: 1920px) {
+            .rodape {
+                height: 40px;
+                background-color: #E9D8C6;
+                border-top: solid #D7C3AE 1px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .rodape p {
+                font-size: 15px;
+                color: #74695E;
+
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="secoes">
-        <div class="secao">
-            <img class="img-mobile" src="/images/secao-1m.png" alt="">
-            <div class="content">
-                <img class="logo" src="/images/logo.png" alt="">
-                <h1 class="title">Você não é desvalorizada pelo que faz. Você é desvalorizada pela forma <span>como é
-                        vista.</span>
-                </h1>
-                <p class="description">Aqui você transforma sua imagem em autoridade, reconhecimento e valor.</p>
+    <div class="secao1">
+        <picture>
+            <!-- Mobile primeiro (menor breakpoint) -->
+            <source media="(max-width: 600px)" srcset="images/fundo1-m.png">
 
-                <div class="perfil-botao">
-                    <div class="perfil">
-                        <img src="/images/foto-de-perfil.png" alt="">
-                        <div class="info-perfil">
-                            <span>
-                                Fabi Souza
-                            </span>
-                            <p>
-                                Consultora de Imagem Pessoal
-                            </p>
-                        </div>
+            <!-- Tablet -->
+            <source media="(max-width: 1024px)" srcset="images/fundo1.png">
+
+            <!-- Desktop -->
+            <img class="fundo1" src="images/fundo1.png" alt="">
+        </picture>
+        <div class="content">
+            <img class="logo" src="images/logo.png" alt="">
+            <h1>
+                Seja Bem-Vinda!
+                Eu sou Fabi Souza, mentora de imagem e posicionamento
+                <span>para mulheres</span>
+            </h1>
+            <p>
+                Aqui você transforma sua imagem em autoridade, reconhecimento e valor.
+            </p>
+            <div class="perfil">
+                <img src="images/perfil.png" alt="">
+                <div class="content-perfil">
+                    <span>Fabi Souza</span>
+                    <p>Consultora de Imagem Pessoal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="secao2">
+        <div class="content">
+            <div class="faq-item"> <!--EBOOK-->
+                <input type="checkbox" id="faq1" class="faq-toggle">
+                <label for="faq1" class="faq-question" id="bottom1">
+                    <div class="content-bottom">
+                        <span>
+                            E-book gratuito
+                        </span>
+                        <h2>
+                            “Sua imagem esta falando”
+                        </h2>
+                        <p>
+                            Um material pra você entender o que seu visual está comunicando e como começar a construir
+                            coerência, presença e autoridade.
+                        </p>
                     </div>
-                    <a href="https://wa.me/21982962706">Fale comigo por WhatsApp
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 15L15 0.999999M15 0.999999L15 15M15 0.999999L1 0.999999" stroke="white"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
+                </label>
+                <div class="faq-answer-wrapper">
+                    <div class="faq-answer">
+                        <ul>
+                            <li>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
+                                            fill="#7E6B5A" />
+                                    </svg>
+                                </span>
+                                Imagem como filtro de valor (antes de você falar)
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
+                                            fill="#7E6B5A" />
+                                    </svg>
+                                </span>
+                                Presença: imagem forte + postura coerente
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
+                                            fill="#7E6B5A" />
+                                    </svg>
+                                </span>
+                                Pausa prática: exercício guiado no guarda-roupa
+                            </li>
+                            <a href="https://drive.google.com/file/d/1smZ8eXZfEckBMar8XDSXCpyTe2HcGzyM/view?usp=drivesdk"
+                                class="cta">
+                                Baixar e-book gratuito
+                                <span>
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H12M12 1V12M12 1L1 12" stroke="#7E6B5A" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
 
-            </div>
+                            </a>
 
-        </div>
-
-        <div class="secao">
-            <img class="img-mobile" src="/images/secao-2m.png" alt="">
-            <div class="content">
-                <img class="logo" src="/images/logo.png" alt="">
-                <h1 class="title"><span>E-book gratuito: </span>Sua imagem está falando
-                </h1>
-                <p class="description">Um material pra você entender o que seu visual está comunicando e como começar a
-                    construir coerência, presença e autoridade.</p>
-                <ul class="lista">
-                    <li class="lista-item">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
-                                fill="#7E6B5A" />
-                        </svg>
-                        <p>Imagem como filtro de valor (antes de você falar)</p>
-                    </li>
-                    <li class="lista-item">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
-                                fill="#7E6B5A" />
-                        </svg>
-                        <p>Presença: imagem forte + postura coerente</p>
-                    </li>
-                    <li class="lista-item">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
-                                fill="#7E6B5A" />
-                        </svg>
-                        <p>Pausa prática: exercício guiado no guarda-roupa</p>
-                    </li>
-                </ul>
-                <a href="https://wa.me/21982962706">Baixar o PDF gratuito
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 15L15 0.999999M15 0.999999L15 15M15 0.999999L1 0.999999" stroke="white"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-            </div>
-
-        </div>
-
-        <div class="secao">
-            <img class="img-mobile" src="/images/secao-3m.png" alt="">
-            <div class="content">
-                <img class="logo" src="/images/logo.png" alt="">
-                <h1 class="title"><span>Transformação completa </span>Mentoria Impacta
-                </h1>
-                <p class="description">Método V.I.P.E. para traduzir seu valor em imagem, presença e estratégia e
-                    sustentar autoridade no digital e no presencial.</p>
-                <ul class="lista">
-                    <li class="lista-item">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
-                                fill="#7E6B5A" />
-                        </svg>
-                        <p>Valor: consciência e narrativa de imagem</p>
-                    </li>
-
-                    <li class="lista-item">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
-                                fill="#7E6B5A" />
-                        </svg>
-                        <p>Imagem: estilo, proporção, cabelo e make como linguagem</p>
-                    </li>
-
-                    <li class="lista-item">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
-                                fill="#7E6B5A" />
-                        </svg>
-                        <p>Presença: coerência entre visual e comportamento</p>
-                    </li>
-
-                    <li class="lista-item">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
-                                fill="#7E6B5A" />
-                        </svg>
-                        <p>Estratégia: guarda-roupa planejado + aplicação em fotos/vídeos</p>
-                    </li>
-
-                </ul>
-                <a href="https://wa.me/21982962706">Quero saber da Mentoria
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 15L15 0.999999M15 0.999999L15 15M15 0.999999L1 0.999999" stroke="white"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-            </div>
-
-        </div>
-
-        <div class="secao">
-            <img class="img-mobile" src="/images/secao-4m.png" alt="">
-            <div class="content">
-                <img class="logo" src="/images/logo.png" alt="">
-                <h1 class="title">Consultoria <span>Impacta </span>
-                </h1>
-                <p class="description">Diagnóstico + direção de imagem estratégica em 2 encontros, focado em alinhar
-                    imagem, negócio e posicionamento.</p>
-                <ul class="lista">
-                    <li class="lista-item">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
-                                fill="#7E6B5A" />
-                        </svg>
-                        <p>2 encontros online (diagnóstico + direção)</p>
-                    </li>
-
-                    <li class="lista-item">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
-                                fill="#7E6B5A" />
-                        </svg>
-                        <p>Identificação de ruídos: apagamento, excesso, incoerência ou neutralização</p>
-                    </li>
-
-                    <li class="lista-item">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
-                                fill="#7E6B5A" />
-                        </svg>
-                        <p>Entrega prática: peças-chave, o que manter, o que parar e o que incluir</p>
-                    </li>
-                </ul>
-                <a href="https://wa.me/21982962706">Quero a Consultoria
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 15L15 0.999999M15 0.999999L15 15M15 0.999999L1 0.999999" stroke="white"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-            </div>
-
-        </div>
-
-    </div>
-    <div class="navegacao">
-        <div class="content mobile">
-            <div class="arrows">
-                <button class="back seta">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 8L1 8.00001M1 8.00001L8 15M1 8.00001L8 1.00001" stroke="#F3EFE1" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-                <button class="next seta">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.00001 8L15 8.00001M15 8.00001L8 15M15 8.00001L8 1.00001" stroke="#F3EFE1"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="line">
-
-        </div>
-    </div>
-
-    <div class="secao-2">
-        <div class="list-botoes">
-            <div class="botao">
-                <div class="info-botao">
-                    <p>Fale</p>
-                    <span>Comigo</span>
-
-                </div>
-                <div class="img-botao primeiro">
-
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="botao">
-                <div class="info-botao">
-                    <span class="span-ajuste">E-book gratuito</span>
-                    <p>Sua imagem esta falando</p>
-                </div>
-                <div class="img-botao segundo">
 
+            <div class="faq-item"> <!--CONSULTORIA-->
+                <input type="checkbox" id="faq2" class="faq-toggle">
+                <label for="faq2" class="faq-question" id="bottom2">
+                    <div class="content-bottom">
+
+                        <h2>
+                            Consultoria
+                        </h2>
+
+                        <span>
+                            Impacta
+                        </span>
+
+                        <p>
+                            Diagnóstico + direção de imagem estratégica em 2 encontros, focado em alinhar imagem,
+                            negócio e posicionamento.
+                        </p>
+                    </div>
+                </label>
+                <div class="faq-answer-wrapper">
+                    <div class="faq-answer">
+                        <ul>
+                            <li>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
+                                            fill="#7E6B5A" />
+                                    </svg>
+                                </span>
+                                2 encontros online (diagnóstico + direção)
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
+                                            fill="#7E6B5A" />
+                                    </svg>
+                                </span>
+                                Identificação de ruídos: apagamento, excesso, incoerência ou neutralização
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
+                                            fill="#7E6B5A" />
+                                    </svg>
+                                </span>
+                                Entrega prática: peças-chave, o que manter, o que parar e o que incluir
+                            </li>
+                            <a href="https://wa.me/5521982962706" class="cta">
+                                Quero a Consultoria
+                                <span>
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H12M12 1V12M12 1L1 12" stroke="#7E6B5A" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+
+                            </a>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="botao">
-                <div class="info-botao">
-                    <p>Mentoria</p>
-                    <span>Impacta</span>
 
-                </div>
-                <div class="img-botao terceiro">
+            <div class="faq-item"> <!--MENTORIA-->
+                <input type="checkbox" id="faq3" class="faq-toggle">
+                <label for="faq3" class="faq-question" id="bottom3">
+                    <div class="content-bottom">
 
+                        <h2>
+                            Mentoria
+                        </h2>
+
+                        <span>
+                            Impacta
+                        </span>
+
+                        <p>
+                            Método V.I.P.E. para traduzir seu valor em imagem, presença e estratégia e sustentar
+                            autoridade no digital e no presencial.
+                        </p>
+                    </div>
+                </label>
+                <div class="faq-answer-wrapper">
+                    <div class="faq-answer">
+                        <ul>
+                            <li>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
+                                            fill="#7E6B5A" />
+                                    </svg>
+                                </span>
+                                Valor: consciência e narrativa de imagem
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
+                                            fill="#7E6B5A" />
+                                    </svg>
+                                </span>
+                                Imagem: estilo, proporção, cabelo e make como linguagem
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
+                                            fill="#7E6B5A" />
+                                    </svg>
+                                </span>
+                                Presença: coerência entre visual e comportamento
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9 11.2324L5.88379 8.11621L4.11621 9.88379L9 14.7676L15.8838 7.88379L14.1162 6.11621L9 11.2324Z"
+                                            fill="#7E6B5A" />
+                                    </svg>
+                                </span>
+                                Estratégia: guarda-roupa planejado + aplicação em fotos/vídeos
+                            </li>
+                            <a href="" class="cta">
+
+                                Quero saber da Mentoria
+                                <span>
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H12M12 1V12M12 1L1 12" stroke="#7E6B5A" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+
+                            </a>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="botao">
-                <div class="info-botao">
-                    <p>Consultoria</p>
-                    <span>Impacta</span>
 
-                </div>
-                <div class="img-botao quarto">
+            <a href="https://wa.me/5521982962706" class="whatsapp"> <!--WHATSAPP-->
+                <img src="images/iconwhatsapp.png" alt="">
+                <h2>Fale Comigo!</h2>
+                <p>Não sabe por onde começar? Vamos conversar no WhatsApp.</p>
+            </a>
 
-                </div>
-            </div>
 
 
         </div>
 
     </div>
-    <script src="/script.js"></script>
+
+    <div class="rodape">
+        <p>Fabi Souza - Todos os direitos reservados</p>
+    </div>
+
 </body>
 
 </html>
